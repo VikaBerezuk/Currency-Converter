@@ -10,18 +10,27 @@
   }
 
   input {
-    width: 300px;
+    width: 100%;
     padding: 10px;
-    margin-right: 10px;
+    margin: 10px 15px;
     border: 1px solid teal;
     cursor: pointer;
+
+    @media(min-width: 700px) {
+      width: 300px;
+    }
   }
 
   select {
     padding: 10px;
+    margin: 10px 15px;
     border: 1px solid teal;
     background-color: white;
     cursor: pointer;
+
+    @media(min-width: 700px) {
+      margin: 0;
+    }
   }
 
   &__error {
